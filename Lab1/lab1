@@ -1,0 +1,97 @@
+PART1
+
+# Change your password with kpasswd, if you have not done so already.
+
+	su kpasswd
+
+# Create a directory structure for this lab in your home directory using mkdir and cd. There should be a directory for the course, and within it a directory for each lab.
+
+	mkdir appbio10
+
+	/appbio10/ mkdir lab1
+
+# Use the man command to figure out...
+
+   1. ... what the command "ls -l" does.
+
+	list directory content using a long listing format
+
+   2. ... how you delete a directory and its contents with rm. 
+
+	rm -r
+
+# Find out, perhaps using man, what the following commands are for.
+
+   1. cat : int/ext output
+   2. more or less : pagination
+   3. head : shows the beginning of a file
+   4. tail : shows the end of a file
+   5. wc : counts words
+   6. grep : search inside a file
+   7. sort : sorts ASCII files
+   8. uniq : can eliminate or count duplicate lines in a presorted file
+   9. cut : displays selected columns or fields from each line of a file
+
+
+PART2
+
+The Unix compendium "An Introduction to Unix" is useful in this assignment.
+
+In these assignments, you will need to use Unix redirection of input and output.
+
+   1. Take a look at the large file /info/appbio10/data/gpcr.tab using head. This file contains data concerning G-coupled protein receptors from a number of species. head. How many columns are there?
+   
+	head /info/appbio10/data/gpcr.ta
+
+	Accession       Entry name      Status  Protein names   Gene names  Organism Length
+
+   
+   2. How many lines is there in the file?
+
+	wc -l /info/appbio10/data/gpcr.tab 
+  
+       29305 /info/appbio10/data/gpcr.tab
+	
+   3. Use grep and wc to find out how many human GPCRs there are listed. Do you search for "human" or "Homo sapiens"?
+
+	grep "Human" /info/appbio10/data/gpcr.tab | wc -l
+
+	    2255
+
+	grep "Homo sapiens" /info/appbio10/data/gpcr.tab | wc -l
+    
+	    2244
+
+   4. How long is the shortest sequence listed in the same file? Use cut and sort!
+
+	cut -s -f 7 /info/appbio10/data/gpcr.tab | sort -b -r -i | tail
+
+		10
+
+   5. How many species are named in gpcr.tab? 
+
+	cut -s -f 6 /info/appbio10/data/gpcr.tab | sort -b -r -i | uniq | wc -l
+    
+		3493
+
+
+PART 3
+Random DNA sequences
+
+Write a Python program that prints a random DNA sequence in Fasta format.
+
+Requirements
+Your program should ask for the length of the sequence and suggest a reasonable sequence name.
+
+The session should look something like:
+
+$ python randomdna.py
+Length: 34
+
+>myrandomsequence
+TGCGCATATTGTCTAACTATGGCTGTGGCCGGA
+
+
+
+
+

@@ -1,0 +1,44 @@
+#
+#		Copies and Copyright-Notice
+#
+# User is not entitled to change or erase data sets of the RegulonDB
+# database or to eliminate copyright notices from RegulonDB. Furthermore,
+# User is not entitled to expand RegulonDB or to integrate RegulonDB partly
+# or as a whole into other databank systems, without prior written consent
+# from CCG-UNAM.
+#
+# Citation
+#
+# User is committed to cite properly the use of RegulonDB. The current most
+# update publication concerning RegulonDB is:
+# Socorro Gama-Castro, Ver¿nica Jim¿nez-Jacinto, Martin Peralta-Gil,
+# Alberto Santos-Zavaleta, Monica I. Pe¿aloza-Spindola, Bruno Contreras-Moreira,
+# Juan Segura-Salazar, Luis Mu¿iz-Rascado, Irma Mart¿nez-Flores, Heladia Salgado,
+# C¿sar Bonavides-Mart¿nez, Cei Abreu-Goodger, Carlos Rodriguez-Penagos, Juan Miranda-Rios,
+# Enrique Morett, Enrique Merino, Araceli M. Huerta, Luis Trevi¿o-Quintanilla and Julio Collado-Vides.
+# "RegulonDB (Version 6.0): gene regulation model of Escherichia coli K-12
+# beyond transcription, active (experimental) annotated promoters and textpresso navigation"
+# Nucleic Acids Research, 2008, vol 36.  D120-D124
+#
+# Release: 6.8 Date: 18-AUG-10
+# _________________________________________________________________________________
+#
+# Columns:
+#	(1) Transcription Factor (TF) Name
+#	(2) Gene coding for the TF (regulatory gene)
+#	(3) Blattner number (bnumber) of the regulatory gene
+#	(4) Gene regulated by the TF (regulated gene)
+#	(5) Blattner number (bnumber) of the regulated gene
+#	(6) Regulatory effect of the TF on the regulated gene (+ activator, - repressor, +- dual, ? unknown)
+#	(7) Regulated gene identifier assigned by RegulonDB
+#	(8) Evidence that supports the existence of the regulatory interaction
+#
+AcrR	acrR	b0464	acrA	b0463	+	ECK120001646	Binding of cellular extracts;Gene expression analysis;Automated inference based on similarity to consensus sequences;Human inference based on similarity to consensus sequences;Binding of purified proteins;
+AcrR	acrR	b0464	acrB	b0463	+	ECK120001646	Binding of cellular extracts;Gene expression analysis;Automated inference based on similarity to consensus sequences;Human inference based on similarity to consensus sequences;Binding of purified proteins;
+AcrR	acrR	b0464	acrB	b0462	-	ECK120001647	Binding of cellular extracts;Gene expression analysis;Automated inference based on similarity to consensus sequences;Human inference based on similarity to consensus sequences;Binding of purified proteins;
+AcrR	acrR	b0464	acrR	b0464	-	ECK120002020	Binding of cellular extracts;Gene expression analysis;
+AcrA	acrA	b0464	acrB	b0464	+	ECK120002020	Binding of cellular extracts;Gene expression analysis;
+MarA	marA	b1531	micF	b4439	+	ECK120002505	Gene expression analysis;Automated inference based on similarity to consensus sequences;Human inference based on similarity to consensus sequences;Binding of purified proteins;
+MarA	marA	b1531	slp	b3506	-	ECK120001820	Gene expression analysis;Human inference based on similarity to consensus sequences;
+MarA	marA	b1531	dctR	b3507	-	ECK120001819	Gene expression analysis;Human inference based on similarity to consensus sequences;
+MarA	marA	b1531	acrB	b0462	+	ECK120001647	Gene expression analysis;Automated inference based on similarity to consensus sequences;Human inference based on similarity to consensus sequences;

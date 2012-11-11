@@ -1,0 +1,35 @@
+
+   5 Populations
+
+Neighbor-Joining/UPGMA method version 3.69
+
+
+ Neighbor-joining method
+
+ Negative branch lengths allowed
+
+
+    +mouse     
+  +-2 
+  ! +-yeast     
+  ! 
+  ! +fly       
+  3-1 
+  ! +------thermus   
+  ! 
+  +human     
+
+
+remember: this is an unrooted tree!
+
+Between        And            Length
+-------        ---            ------
+   3             2            0.00375
+   2          mouse           0.00375
+   2          yeast           0.03625
+   3             1            0.01375
+   1          fly            -0.00333
+   1          thermus         0.11333
+   3          human           0.00125
+
+
