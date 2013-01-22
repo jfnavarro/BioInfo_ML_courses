@@ -383,6 +383,7 @@ def main(argv):
                 prot_file = words[0]
                 labels.append(words[1])
                 if(os.path.isfile(prot_file)):
+                    
                     proteins = util.importer(prot_file)
                     sets.append(set([str(prot.protein) for prot in proteins if prot.protein.find(decoy_prefix) == -1]))
                     if(verbose):

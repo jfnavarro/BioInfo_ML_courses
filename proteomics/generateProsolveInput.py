@@ -10,7 +10,7 @@ import percolatorUtils as per
 import generalUtils as utils
 
 def usage():
-    print "this script generates a MAGNUS txt input file from a percolator pout.xml file"
+    print "this script generates a PROSOLVE txt input file from a percolator pout.xml file"
     print "Usage : generateProsolveInput.py <pout.xml> [-o, --output <output.txt>] [-h, --help] [-v, --verbose] [-e, --hidden] [-m, --maxpsms]"
     print "--hidden : the percolator file was run with hidden decoys in the target database (normal decoys will be discarded)"
     print "--maxpsms : the output file containing PSMs will have a maximum of maxpsms number of PSMs per peptide"
